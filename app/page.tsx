@@ -111,6 +111,7 @@ export default async function Home() {
               <Button
                 variant="outline"
                 size="sm"
+                nativeButton={false}
                 render={<a href={chatGPTSignOutPath('/')} />}
               >
                 로그아웃
@@ -119,12 +120,17 @@ export default async function Home() {
               <Button
                 variant="outline"
                 size="sm"
+                nativeButton={false}
                 render={<a href={chatGPTSignInPath('/')} />}
               >
                 로그인
               </Button>
             )}
-            <Button size="sm" render={<a href="#member-center" />}>
+            <Button
+              size="sm"
+              nativeButton={false}
+              render={<a href="#member-center" />}
+            >
               가입신청
             </Button>
           </div>
@@ -149,10 +155,19 @@ export default async function Home() {
               넓혀갑니다.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button size="lg" render={<a href="#member-center" />}>
+              <Button
+                size="lg"
+                nativeButton={false}
+                render={<a href="#member-center" />}
+              >
                 회원가입 신청 <ArrowRight className="size-4" />
               </Button>
-              <Button variant="outline" size="lg" render={<a href="#resources" />}>
+              <Button
+                variant="outline"
+                size="lg"
+                nativeButton={false}
+                render={<a href="#resources" />}
+              >
                 자료 확인
               </Button>
             </div>
@@ -235,7 +250,12 @@ export default async function Home() {
                   공지사항과 행사정보
                 </h2>
               </div>
-              <Button variant="outline" size="sm" render={<a href="#member-center" />}>
+              <Button
+                variant="outline"
+                size="sm"
+                nativeButton={false}
+                render={<a href="#member-center" />}
+              >
                 회원문의
               </Button>
             </div>
@@ -474,12 +494,16 @@ export default async function Home() {
                       {access.user ? (
                         <Button
                           variant="outline"
+                          nativeButton={false}
                           render={<a href={chatGPTSignOutPath('/')} />}
                         >
                           로그아웃
                         </Button>
                       ) : (
-                        <Button render={<a href={chatGPTSignInPath('/')} />}>
+                        <Button
+                          nativeButton={false}
+                          render={<a href={chatGPTSignInPath('/')} />}
+                        >
                           ChatGPT로 로그인
                         </Button>
                       )}
