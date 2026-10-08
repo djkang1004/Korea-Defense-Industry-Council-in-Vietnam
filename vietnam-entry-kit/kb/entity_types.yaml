@@ -1,0 +1,128 @@
+# 베트남 진출형태 지식베이스
+# status: 확인(법령 근거 명확) | 검증필요(개정·지역별 운영 차이 가능) | 추정(실무 경험 기반)
+# 모든 항목은 보고서 반영 전 최신 법령·관할 기관 창구 확인이 필요합니다.
+last_reviewed: "2026-10"
+
+options:
+  - id: distributor
+    name: 현지 유통사·대리점 활용 (법인 미설립)
+    legal_basis: 상법(Commercial Law 2005) 대리·유통 계약
+    can_do: 현지 파트너 명의 수입·판매, 초기 시장 검증
+    cannot_do: 고객사 명의 현지 영업·채용·인보이스 발행
+    licensing: 별도 인허가 없음 (파트너가 수입·유통 자격 보유 필요)
+    timeline_statutory: 해당 없음
+    timeline_practical: "파트너 발굴·계약 1~3개월 (추정)"
+    capital: 없음
+    pros:
+      - 초기 비용·고정비 최소
+      - 파트너의 기존 유통망·인허가 활용
+      - 철수 용이
+    cons:
+      - 가격·브랜드·고객 데이터 통제력 약함
+      - 파트너 의존도 높음, 마진 공유
+    risks:
+      - 독점권 분쟁·계약 해지 시 재고·등록증(제품 등록 명의) 회수 문제
+      - 파트너 컴플라이언스(부패·세무) 리스크 전이
+    difficulty: 1
+    status: 확인
+
+  - id: rep_office
+    name: 대표사무소 (Representative Office)
+    legal_basis: "Decree 07/2016/ND-CP (상법 시행령)"
+    can_do: 시장조사, 연락·홍보, 본사 계약 이행 촉진
+    cannot_do: 직접 영리활동, 판매계약 체결, 인보이스 발행
+    licensing: "성(省)급 산업무역국(DOIT) 또는 경제구역관리위원회 — 설립 허가 유효기간 5년"
+    eligibility: "외국 상인으로서 본국 등록 후 최소 1년 이상 영업 (Decree 07/2016)"
+    timeline_statutory: "서류 접수 후 7영업일 (Decree 07/2016)"
+    timeline_practical: "서류 준비(본국 공증·영사확인 포함) 포함 1.5~3개월 (추정)"
+    capital: 법정 자본금 없음
+    pros:
+      - 설립 간편, 비용 낮음
+      - 현지 인력 채용 가능 (조직 기반 확보)
+    cons:
+      - 매출 발생 불가 → 판매가 목적이면 부적합
+      - 활동 보고 의무
+    risks:
+      - 실질 영리활동 시 무허가 영업으로 제재 가능
+    difficulty: 2
+    status: 확인
+
+  - id: branch
+    name: 지점 (Branch)
+    legal_basis: "Decree 07/2016/ND-CP"
+    can_do: 본사 업종 범위 내 영리활동 (베트남 WTO 양허 범위 내)
+    cannot_do: 본사 업종 외 활동, 일반적으로 제조
+    licensing: "산업무역부(MOIT) 설립 허가 — 유효기간 5년"
+    eligibility: "본국 등록 후 최소 5년 이상 영업 (Decree 07/2016)"
+    timeline_statutory: "접수 후 7영업일 + 관계 부처 협의 시 연장"
+    timeline_practical: "3~6개월 이상 (추정, 승인 사례 제한적)"
+    capital: 법정 자본금 없음 (본사 책임)
+    pros:
+      - 본사 명의 영업 가능
+    cons:
+      - 승인 사례가 적고 절차가 불투명한 편 (실무 평가)
+      - 본사가 무한 책임
+    risks:
+      - 허가 업종 제한으로 실제 활용도 낮음
+    difficulty: 4
+    status: 검증필요
+
+  - id: fdi_llc
+    name: 100% 외국인투자 유한책임회사 (FDI LLC)
+    legal_basis: "투자법 2020(61/2020/QH14), 기업법 2020(59/2020/QH14) 및 2025년 개정, Decree 31/2021/ND-CP(외국인 시장접근 목록)"
+    can_do: 투자등록 범위 내 판매·서비스·제조, 현지 인보이스 발행, 채용
+    cannot_do: 시장접근 제한 업종(Decree 31/2021) 단독 영위
+    licensing: "투자등록증(IRC) → 기업등록증(ERC). 2025년 정부조직 개편 이후 성(省)급 재정국(구 기획투자국 기능 이관)이 창구 — 지역별 확인 필요"
+    timeline_statutory: "IRC 15일(투자방침 승인 불요 사업), ERC 3영업일"
+    timeline_practical: "IRC·ERC·은행 자본계좌·세무 등록까지 2~4개월, 유통 영업허가(Decree 09/2018) 필요 시 +1~3개월 (추정)"
+    capital: "일반 업종 법정 최소자본 없음, 단 사업계획 대비 적정성 심사. ERC 발급 후 90일 내 출자 완료 (기업법 2020 제47조)"
+    pros:
+      - 100% 지배권, 이익·브랜드 통제
+      - 현지 매출·채용·제조 모두 가능
+    cons:
+      - 설립·유지 비용(회계감사, 세무신고, 이전가격) 발생
+      - 업종별 추가 허가 필요 가능
+    risks:
+      - 투자등록 범위 외 활동 시 제재
+      - 자본금 출자 지연 시 과태료·자본금 감액 등록 의무
+    difficulty: 3
+    status: 검증필요
+
+  - id: joint_venture
+    name: 합작법인 (Joint Venture)
+    legal_basis: "투자법 2020, 기업법 2020 — 지분 상한은 업종별 양허·Decree 31/2021 적용"
+    can_do: 외국인 지분 제한 업종 진입, 파트너 인허가·네트워크 활용
+    cannot_do: 정관·주주간계약 범위 밖 단독 의사결정
+    licensing: FDI LLC와 동일 (IRC → ERC), 외국인 지분 51% 초과 시 외국인투자기업 절차 적용
+    timeline_statutory: FDI LLC와 동일
+    timeline_practical: "파트너 실사·협상 포함 4~9개월 (추정)"
+    capital: 지분율에 따라 분담
+    pros:
+      - 규제·B2G 접근성, 파트너 고객망
+      - 투자 리스크 분담
+    cons:
+      - 경영권·이익 배분 갈등
+      - 파트너 실사 부담
+    risks:
+      - 파트너 부정·평판 리스크 전이
+      - 교착(deadlock) 및 철수 조항 미비 시 회수 곤란
+    difficulty: 4
+    status: 검증필요
+
+  - id: bcc
+    name: 사업협력계약 (BCC, Business Cooperation Contract)
+    legal_basis: "투자법 2020 (BCC 투자 형태)"
+    can_do: 법인 설립 없이 현지 기업과 수익 배분형 사업
+    cannot_do: 독립 법인격 행사
+    licensing: "외국인 참여 BCC는 투자등록증(IRC) 필요"
+    timeline_statutory: IRC 절차 준용
+    timeline_practical: "2~4개월 (추정)"
+    capital: 계약상 출자
+    pros:
+      - 법인 미설립, 특정 프로젝트 단위 협력에 적합
+    cons:
+      - 실무 사례 제한, 세무 처리 복잡
+    risks:
+      - 수익 배분·세무 해석 분쟁
+    difficulty: 4
+    status: 검증필요

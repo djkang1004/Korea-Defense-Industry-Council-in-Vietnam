@@ -1,0 +1,21 @@
+# 내부 검토본 업무 배분용 팀 구성 (실명으로 바꿔 사용하십시오)
+# 고객사 제출본에서는 개인명이 노출되지 않고 external_name(기능 조직명)으로만 표시됩니다.
+members:
+  - id: A
+    name: 직원 A
+    role: 리서치·데이터
+    external_name: 시장분석팀
+    owns: [MKT, CMP, MKG, TRD]
+  - id: B
+    name: 직원 B
+    role: 인허가·서류·행정
+    external_name: 인허가지원팀
+    owns: [REG, ENT, DEF]
+  - id: C
+    name: 직원 C
+    role: 파트너·바이어·현장
+    external_name: 현지대응팀
+    owns: [CHN, RSK]
+pm:
+  name: PM
+  external_name: 프로젝트총괄
