@@ -1,0 +1,60 @@
+# ============================================================
+# 베트남 진출 자동화 키트 — 고객사 인테이크 시트
+# 이 파일을 복사해 고객사 정보만 채우면 됩니다.
+#   python -m vnkit init "고객사명"   → intake/<고객사명>.yaml 생성
+#   python -m vnkit build intake/<고객사명>.yaml
+# 모르는 항목은 비워 두십시오(빈 값은 '미확인'으로 처리되어 보고서에 확인 필요 사항으로 표시됩니다).
+# ============================================================
+
+project:
+  client_code: ""            # 내부 프로젝트 코드 (예: SMBL-2026-014)
+  report_audience: external  # external(고객사 제출용) | internal(내부 검토본)
+  deliverables:              # 필요한 산출물만 남기십시오
+    - market_research        # 시장조사
+    - marketing_research     # 마케팅 조사
+    - entity_setup           # 법인·지사·사무소 설립 지원
+    - trade                  # 수출입(통관·관세·인증)
+  deadline: ""               # 보고서 납기 (YYYY-MM-DD)
+
+company:
+  name: ""                   # 고객사명
+  name_en: ""
+  country: 대한민국
+  website: ""
+  established_year:          # 설립연도 (사무소·지사 설립 요건 판단에 사용)
+  employees:
+  annual_revenue_krw_100m:   # 연매출, 억 원 단위 숫자 (예: 350 = 350억 원)
+  industry: ""               # 업종 (자유 기술: 예 "화장품 제조", "방산 부품", "식품 수출")
+  business_model: ""         # B2B | B2C | B2G | 혼합
+  products:                  # 주력 제품·서비스 (복수 가능)
+    - name: ""
+      description: ""
+      hs_code: ""            # 알면 입력 (6~10자리)
+      price_range: ""        # 예: FOB 단가, 소비자가
+  export_experience: ""      # 해외 수출 경험·주요 국가
+  certifications: []         # 보유 인증 (ISO, CE, FDA, KC, Halal 등)
+
+vietnam:
+  current_presence: none     # none | distributor | rep_office | branch | entity
+  existing_partners: ""      # 기존 현지 파트너·바이어 (있으면)
+  target_cities: [호찌민, 하노이]
+  target_customers: ""       # 목표 고객 (예: 대형 유통사, 국방부 산하 기업, 2030 여성)
+  objective: ""              # 진출 목적 한 줄 (예: "3년 내 현지 판매법인 설립 후 연매출 50억")
+  entry_stage: exploring     # exploring(타당성 검토) | committed(진출 결정) | expanding(확장)
+  needs_local_invoicing:     # 베트남 내에서 직접 판매·세금계산서 발행 필요? true/false
+  local_manufacturing:       # 현지 생산·조립 계획? true/false
+  local_hiring_plan:         # 1년 내 현지 채용 예정 인원 (숫자)
+  budget_usd_k:              # 초기 진출 예산 (천 달러)
+  timeline_months:           # 진출 목표 시점까지 개월 수
+  import_to_vietnam: true    # 한국→베트남 수출(베트남 측 수입) 여부
+  export_from_vietnam: false # 베트남→제3국/한국 수출 여부
+
+sensitivity:                 # 해당되면 true — 규제·평판 리스크 분석이 강화됩니다
+  defense_or_military: false # 방산·군 조달 관련
+  dual_use_or_strategic: false # 전략물자·이중용도 품목 가능성
+  government_customer: false # 정부·공기업 대상 영업
+  personal_data: false       # 베트남 개인정보 처리
+  regulated_health: false    # 식품·화장품·의약·의료기기 등 보건 규제 품목
+
+constraints: ""              # 고객사가 밝힌 제약 (예산, 지분 51% 이상 유지, 특정 파트너 배제 등)
+notes: ""                    # 기타 메모 (미팅 내용 등)

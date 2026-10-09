@@ -1,0 +1,188 @@
+# 업종별 프로파일 — keywords로 인테이크의 industry/products 문구를 매칭합니다.
+# 신규 업종은 같은 형식으로 추가하면 자동 반영됩니다.
+last_reviewed: "2026-10"
+
+sectors:
+  - id: defense_dual_use
+    name: 방산·이중용도
+    keywords: [방산, 방위, 군, 국방, 무기, 탄약, 함정, 항공기 부품, 드론, 무인기, 레이더, 야간투시, 광학, 전술, 군수, defense, military, dual-use, uav, radar]
+    regulators:
+      - "베트남 국방부(Bộ Quốc phòng) 및 산하 국방산업총국 — 조달·기술협력 창구"
+      - "베트남 공안부 — 보안·통신 장비 관련 일부 품목"
+      - "한국 방위사업청 — 방산물자 수출허가"
+      - "한국 산업통상자원부·무역안보관리원 — 전략물자 판정·수출허가"
+    key_rules:
+      - text: "베트남 방위산업은 국방부 산하 국영기업 중심 구조이며, 외국인의 직접 생산·판매 진입은 원칙적으로 제한 — 기술이전·합작·현지 지정업체 경유 형태가 일반적"
+        status: 검증필요
+      - text: "국방안보산업 및 산업동원법(2024 제정, 2025.7 시행)에 따른 민간·외국 참여 범위 확인 필요"
+        status: 검증필요
+      - text: "한국산 방산물자는 방위사업법상 방위사업청 수출허가 대상, 이중용도 품목은 대외무역법상 전략물자 판정(무역안보관리원) 선행"
+        status: 확인
+      - text: "군용 물자의 베트남 수입은 국방부 지정 기관을 통한 통제 수입 구조 — 민간 수입 경로 확인 필요"
+        status: 검증필요
+    trade_notes:
+      - 품목별 전략물자 해당 여부 판정 선행 (Yestrade 사전판정)
+      - 최종사용자증명(EUC) 확보 절차 확인
+    marketing_channels:
+      - "베트남 국방 전시회(Vietnam International Defence Expo) 등 정부 주관 전시"
+      - 주베트남 대한민국대사관 국방무관부·KOTRA 협업
+      - G2G 협의체·방산 협의회 네트워크
+    data_sources:
+      - SIPRI Arms Transfers Database
+      - 베트남 국방부 공식 발표·관영 매체(QĐND)
+      - KOTRA 해외시장뉴스
+    extra_risks:
+      - "정치·외교: 대중·대러 관계 등 지정학 변수, 미국 제재(CAATSA 등) 연계 여부"
+      - "평판: 무기 수출 관련 국내외 여론"
+      - "부패: 조달 과정 중개인 리스크 — 한국 국제뇌물방지법·베트남 형법"
+    force_flags: [defense_or_military]
+
+  - id: food
+    name: 식품·농수산
+    keywords: [식품, 음료, 라면, 김치, 소스, 건강기능식품, 농산물, 수산물, 과자, 커피, 주류, food, beverage, snack]
+    regulators:
+      - "보건부 식품안전국(VFA) — 자가공표·등록"
+      - "농업환경부 — 동식물 검역 (2025 조직개편: 농업농촌개발부+천연자원환경부 통합)"
+      - "산업무역부(MOIT) — 주류 등 일부 품목"
+    key_rules:
+      - text: "포장식품은 Decree 15/2018/ND-CP에 따른 제품 자가공표(self-declaration), 건강기능식품·영아식품 등은 등록 대상"
+        status: 확인
+      - text: "수입식품 국가 검사(식품안전 검사) 방식: 간소·일반·강화 검사"
+        status: 확인
+      - text: "Decree 15/2018 대체·개정 동향(식품안전법 개정 논의) 확인 필요"
+        status: 검증필요
+      - text: "라벨링: Decree 43/2017/ND-CP 및 개정 Decree 111/2021/ND-CP — 베트남어 보조라벨 필수"
+        status: 확인
+    trade_notes:
+      - "VKFTA·RCEP·AKFTA 중 최저 세율 협정 선택 (원산지증명 Form VK/AK/RCEP)"
+      - 콜드체인 물류·유통기한 잔여 기준 확인
+    marketing_channels: [Shopee, Lazada, TikTok Shop, "현대식 유통(Lotte Mart, Emart, WinMart, Co.opmart)", 한인·K-푸드 매장, "Facebook·Zalo 커뮤니티"]
+    data_sources: [베트남 통계청(NSO), 베트남 관세청, aT 한국농수산식품유통공사, KOTRA, Euromonitor/Statista(유료), Metric.vn(이커머스)]
+    extra_risks: ["리콜·식품안전 이슈 시 SNS 확산 속도 빠름", "위조·모조품(짝퉁) 리스크"]
+    force_flags: [regulated_health]
+
+  - id: cosmetics
+    name: 화장품·뷰티
+    keywords: [화장품, 뷰티, 스킨케어, 색조, 헤어, 향수, cosmetic, beauty, skincare]
+    regulators: ["보건부 의약품관리국(DAV) — 화장품 공표(notification)"]
+    key_rules:
+      - text: "화장품은 시판 전 보건부(DAV)에 제품 공표 필요 — 공표번호 유효기간 5년 (Circular 06/2011/TT-BYT, ASEAN 화장품 지침 기반)"
+        status: 확인
+      - text: "공표 명의자는 베트남 내 법인(수입사·유통사 또는 자사 법인) — 파트너 변경 시 재공표 이슈"
+        status: 확인
+      - text: "화장품 관리 신규 시행령 제정 동향 확인 필요"
+        status: 검증필요
+    trade_notes: [제품정보파일(PIF) 준비, "자유판매증명서(CFS) — 한국 식약처 발급, 영사확인 필요 여부 확인"]
+    marketing_channels: [TikTok Shop, Shopee, Lazada, "Hasaki·Guardian·Watsons 등 H&B", "KOL·KOC 인플루언서", Facebook, Instagram]
+    data_sources: [KOTRA, 대한화장품산업연구원, Metric.vn, Decision Lab, "Q&Me 소비자조사"]
+    extra_risks: ["공표 명의가 파트너에 있으면 브랜드 통제권 상실", "인플루언서 광고 규제(광고법 개정) 위반 리스크"]
+    force_flags: [regulated_health]
+
+  - id: medical
+    name: 의료기기·의약·헬스케어
+    keywords: [의료기기, 의약품, 제약, 병원, 진단, 헬스케어, medical, pharma, healthcare, diagnostic]
+    regulators: ["보건부 의료기기·공사국 / 의약품관리국(DAV)"]
+    key_rules:
+      - text: "의료기기는 Decree 98/2021/ND-CP(및 개정 Decree 07/2023)에 따라 A/B/C/D 등급 분류 후 공표 또는 유통등록"
+        status: 확인
+      - text: "의약품은 약사법 2016 및 2024 개정법에 따라 유통등록(MA) 필요, 외국인투자기업의 의약품 유통 범위 제한"
+        status: 검증필요
+    trade_notes: [등록 명의자(License holder) 지정 전략, 공공병원 입찰 규정]
+    marketing_channels: [공공·민간 병원 입찰, 의료 전시회(Vietnam Medi-Pharm), KOL 의사 네트워크]
+    data_sources: [베트남 보건부, KHIDI 한국보건산업진흥원, KOTRA]
+    extra_risks: ["공공병원 입찰 부패 리스크", "등록 지연에 따른 출시 일정 불확실성"]
+    force_flags: [regulated_health]
+
+  - id: industrial
+    name: 기계·소재·산업재·부품
+    keywords: [기계, 부품, 장비, 소재, 금형, 자동화, 공구, 철강, 화학, 플라스틱, 정밀, machinery, equipment, parts, industrial]
+    regulators: ["과학기술부 — 기술규정(QCVN) 적합성", "산업무역부 — 일부 품목 수입 관리"]
+    key_rules:
+      - text: "QCVN 대상 품목은 수입 시 적합성 인증(CR 마크) 및 전문검사 필요"
+        status: 확인
+      - text: "중고 기계·설비 수입은 Decision 18/2019/QD-TTg 기준(연식 등) 적용"
+        status: 확인
+      - text: "화학물질은 화학법(2025 개정) 및 신고 의무 확인"
+        status: 검증필요
+    trade_notes: [HS코드 사전심사(Advance ruling) 검토, 원산지 결정기준(CTH/RVC) 충족 여부]
+    marketing_channels: ["산업 전시회(Vietnam Manufacturing Expo, MTA Vietnam 등)", 한국계 공단 입주기업 네트워크, "B2B 플랫폼·LinkedIn", 현지 엔지니어링 대리점]
+    data_sources: [베트남 관세청, ITC Trade Map, KITA 무역통계, KOTRA, 공단 입주 현황]
+    extra_risks: ["중국산 저가 경쟁", "AS·부품 공급 체계 미비 시 신뢰 하락"]
+    force_flags: []
+
+  - id: ict
+    name: ICT·소프트웨어·플랫폼
+    keywords: [소프트웨어, SaaS, 플랫폼, 앱, IT, AI, 보안, 클라우드, 통신, 게임, 핀테크, software, platform, app, fintech, telecom]
+    regulators: ["과학기술부(구 정보통신부 통합) — 통신·디지털 서비스", "베트남 중앙은행(SBV) — 핀테크·결제", "공안부 — 사이버보안·개인정보"]
+    key_rules:
+      - text: "개인정보보호법(Law 91/2025/QH15, 2026.1 시행) 및 하위 시행령 — 개인정보 영향평가·국외이전 신고"
+        status: 검증필요
+      - text: "사이버보안법(2018) 및 Decree 53/2022 — 일부 서비스 데이터 현지 저장·지사 설치 요구 가능"
+        status: 확인
+      - text: "전자상거래·디지털 플랫폼, 해외 공급자 전자세금 등록(국외사업자 VAT·CIT) 의무"
+        status: 확인
+      - text: "디지털기술산업법(2025) 인센티브 적용 가능성"
+        status: 검증필요
+    trade_notes: ["소프트웨어 수출은 서비스 무역 — 계약·원천세(FCT) 구조 검토"]
+    marketing_channels: [Zalo OA, Facebook, Google Ads, "스타트업 행사(Techfest)", "현지 SI·리셀러 파트너"]
+    data_sources: [Google-Temasek-Bain e-Conomy SEA, 베트남 과학기술부, KOTRA, NIPA, Decision Lab]
+    extra_risks: ["데이터 현지화·검열 요구", "외국계약자세(FCT) 미처리 시 세무 리스크"]
+    force_flags: [personal_data]
+
+  - id: consumer_retail
+    name: 소비재·유통·프랜차이즈
+    keywords: [소비재, 생활용품, 패션, 의류, 가전, 유아, 반려, 프랜차이즈, 카페, 외식, retail, consumer, franchise, fashion]
+    regulators: ["산업무역부 — 유통 영업허가(Decree 09/2018), 프랜차이즈 등록"]
+    key_rules:
+      - text: "외국인투자기업의 유통·소매는 Decree 09/2018/ND-CP 영업허가 필요, 1호점 외 소매점포 추가 시 경제수요심사(ENT) 대상 가능"
+        status: 확인
+      - text: "프랜차이즈는 해외에서 베트남으로 진입 시 산업무역부 등록 대상 (Decree 35/2006 및 개정)"
+        status: 검증필요
+    trade_notes: [제품별 QCVN 적용 여부(전기전자·유아용품 등), 베트남어 라벨]
+    marketing_channels: [Shopee, Lazada, TikTok Shop, Facebook, Zalo, "쇼핑몰(Vincom, AEON, Lotte)", KOL·KOC]
+    data_sources: [NSO, Metric.vn, Q&Me, Decision Lab, KOTRA, Statista]
+    extra_risks: ["이커머스 플랫폼 수수료·정책 변동", "위조품·병행수입"]
+    force_flags: []
+
+  - id: services_education
+    name: 서비스·교육·컨설팅
+    keywords: [교육, 학원, 컨설팅, 인력, 관광, 물류, 의료관광, 서비스, education, consulting, logistics, service]
+    regulators: ["교육훈련부 — 교육기관 설립", "산업무역부 — 물류", "관할 부처별 상이"]
+    key_rules:
+      - text: "서비스 업종은 베트남 WTO 서비스 양허표 및 Decree 31/2021 조건부 업종 여부를 우선 확인"
+        status: 확인
+      - text: "외국인투자 교육기관 설립은 Decree 86/2018/ND-CP(및 개정) 최소 투자 요건 적용"
+        status: 검증필요
+    trade_notes: [서비스 대가 송금 시 외국계약자세(FCT) 검토]
+    marketing_channels: [Facebook, Zalo, Google, 오프라인 설명회, 현지 기관 MOU]
+    data_sources: [NSO, 교육훈련부, KOTRA]
+    extra_risks: ["조건부 업종 인허가 지연"]
+    force_flags: []
+
+  - id: energy_construction
+    name: 에너지·건설·인프라
+    keywords: [에너지, 태양광, 풍력, 발전, 건설, 인프라, 플랜트, 수처리, 환경, energy, construction, infrastructure, plant]
+    regulators: ["산업무역부 — 전력", "건설부 — 건설 허가·외국 시공사 허가", "농업환경부 — 환경영향평가"]
+    key_rules:
+      - text: "외국 시공사는 건설부(또는 성 건설국) 건설활동 허가 필요"
+        status: 확인
+      - text: "전력개발계획(PDP8 및 2025 수정안)·직접전력구매(DPPA) 제도 확인"
+        status: 검증필요
+    trade_notes: [프로젝트 수입 면세 목록 등록 가능성]
+    marketing_channels: [발주처 직접 영업, EPC 협력, ODA·EDCF 사업 연계]
+    data_sources: [산업무역부, 세계은행, ADB, KOTRA, 한국수출입은행]
+    extra_risks: ["인허가·토지 수용 지연", "정책 변경(FIT 등) 소급 리스크"]
+    force_flags: [government_customer]
+
+  - id: general
+    name: 일반 (업종 미분류)
+    keywords: []
+    regulators: ["업종별 관할 부처 — 조사 필요"]
+    key_rules:
+      - text: "업종을 VSIC 코드로 확정한 뒤 Decree 31/2021 시장접근 목록 해당 여부 확인 필요"
+        status: 확인
+    trade_notes: [HS코드 확정 후 관세·전문검사 확인]
+    marketing_channels: [Facebook, Zalo, 전시회, KOTRA 무역관 바이어 매칭]
+    data_sources: [NSO, 베트남 관세청, KOTRA, ITC Trade Map]
+    extra_risks: []
+    force_flags: []

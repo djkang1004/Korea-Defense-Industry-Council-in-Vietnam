@@ -1,0 +1,39 @@
+# 예시 고객사 (가상 기업) — 방산·이중용도 광학 부품
+project:
+  client_code: SAMPLE-DEF-01
+  report_audience: external
+  deliverables: [market_research, entity_setup, trade]
+company:
+  name: 가상광학(주)
+  name_en: Gasang Optics Co., Ltd.
+  country: 대한민국
+  established_year: 2009
+  employees: 120
+  annual_revenue_krw_100m: 350
+  industry: 방산 광학 부품 및 산업용 열화상 카메라 제조
+  business_model: B2B, B2G
+  products:
+    - name: 야간투시 광학 모듈
+      description: 군·경 감시장비용 열화상·야간투시 광학 모듈
+      hs_code: "9013.80"
+    - name: 산업용 열화상 카메라
+      description: 발전소·공장 설비 점검용
+      hs_code: "9025.19"
+  export_experience: 인도네시아·필리핀 방산 수출 경험
+  certifications: [ISO 9001, AS9100]
+vietnam:
+  current_presence: none
+  target_cities: [하노이, 호찌민]
+  target_customers: 베트남 국방부 산하 국방산업 기업, 민간 발전소·제조공장
+  objective: 국방 분야 기술협력 및 민수 열화상 카메라 판매 거점 확보
+  entry_stage: exploring
+  needs_local_invoicing: false
+  local_manufacturing: false
+  local_hiring_plan: 2
+  budget_usd_k: 150
+  timeline_months: 9
+sensitivity:
+  defense_or_military: true
+  dual_use_or_strategic: true
+  government_customer: true
+constraints: 기술유출 우려로 합작 시 핵심 광학 설계는 이전 불가

@@ -1,0 +1,32 @@
+# 예시 고객사 (가상 기업) — K-뷰티 중소 브랜드
+project:
+  client_code: SAMPLE-COS-01
+  report_audience: external
+  deliverables: [market_research, marketing_research, entity_setup, trade]
+company:
+  name: 가상뷰티
+  established_year: 2018
+  employees: 35
+  annual_revenue_krw_100m: 80
+  industry: 기초 스킨케어 화장품 브랜드
+  business_model: B2C
+  products:
+    - name: 진정 앰플·선크림
+      description: 민감성 피부용 기초 화장품
+      hs_code: "3304.99"
+  export_experience: 일본·태국 온라인 판매
+  certifications: [CGMP, 비건 인증]
+vietnam:
+  current_presence: distributor
+  existing_partners: 호찌민 소재 수입 유통사 1곳 (비독점)
+  target_cities: [호찌민, 하노이]
+  target_customers: 20~35세 도시 여성
+  objective: 2년 내 현지 판매법인 설립 후 이커머스·H&B 채널 직접 운영
+  entry_stage: committed
+  needs_local_invoicing: true
+  local_manufacturing: false
+  local_hiring_plan: 6
+  budget_usd_k: 400
+  timeline_months: 12
+sensitivity:
+  personal_data: true

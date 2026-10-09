@@ -1,0 +1,47 @@
+# 진출형태별 실행 단계 템플릿 (owner는 team.yaml의 id)
+# weeks는 실무 경험 기반 추정치이며 지역·업종에 따라 달라질 수 있습니다.
+common_pre:
+  - {step: "한국 측 해외직접투자 신고(외국환은행) 요건 확인", owner: B, weeks: 1}
+  - {step: "본사 서류(사업자등록증·정관·재무제표·대표자 여권) 공증·영사확인", owner: B, weeks: 3}
+  - {step: "현지 사무실 후보 조사·가계약(주소 증빙 확보)", owner: C, weeks: 3}
+
+steps:
+  distributor:
+    - {step: "유통사·대리점 후보 롱리스트(20개) 작성 및 1차 스크리닝", owner: A, weeks: 2}
+    - {step: "후보사 실사(법인등록·수입 자격·재무·평판·소송)", owner: C, weeks: 3}
+    - {step: "대리점 계약서 초안(독점 범위·KPI·해지·등록 명의 이관 조항) — 현지 변호사 검토", owner: B, weeks: 3}
+    - {step: "제품 등록·공표 명의 및 비용 분담 확정", owner: B, weeks: 2}
+    - {step: "초도 물량 선적·판촉 계획 수립", owner: C, weeks: 4}
+  rep_office:
+    - {step: "관할 산업무역국(DOIT) 확인 및 신청서류 작성", owner: B, weeks: 2}
+    - {step: "대표사무소 설립허가 신청·수령", owner: B, weeks: 2}
+    - {step: "인장 등록·세무코드 신고·은행 계좌 개설", owner: B, weeks: 2}
+    - {step: "수석대표 노동허가·현지 인력 채용", owner: C, weeks: 4}
+    - {step: "연간 활동보고 일정 등록", owner: B, weeks: 1}
+  branch:
+    - {step: "산업무역부(MOIT) 사전 협의 — 허가 업종 범위 확인", owner: B, weeks: 3}
+    - {step: "지점 설립허가 신청·관계 부처 협의 대응", owner: B, weeks: 8}
+    - {step: "세무·은행·인장 등록", owner: B, weeks: 2}
+  fdi_llc:
+    - {step: "업종코드(VSIC)·시장접근 조건 확정 및 투자 계획서 작성", owner: B, weeks: 2}
+    - {step: "투자등록증(IRC) 신청 — 성(省) 재정국/경제구역관리위", owner: B, weeks: 4}
+    - {step: "기업등록증(ERC) 신청·인장 제작·공고", owner: B, weeks: 1}
+    - {step: "직접투자자본계좌(DICA)·운영계좌 개설, 90일 내 자본금 납입", owner: B, weeks: 4}
+    - {step: "세무 등록·전자세금계산서·회계 담당 선임", owner: B, weeks: 2}
+    - {step: "업종별 하위 허가(유통 영업허가 Decree 09/2018 등) 신청", owner: B, weeks: 6}
+    - {step: "법인장 노동허가·현지 채용", owner: C, weeks: 6}
+  joint_venture:
+    - {step: "합작 파트너 후보 발굴·1차 미팅", owner: C, weeks: 4}
+    - {step: "파트너 실사(법률·재무·평판·정치적 연계)", owner: A, weeks: 4}
+    - {step: "주주간계약(지분·이사회·교착·철수·경업금지) 협상 — 현지·한국 변호사 검토", owner: B, weeks: 6}
+    - {step: "IRC·ERC 신청 및 자본금 납입", owner: B, weeks: 6}
+    - {step: "합작법인 운영 체계(보고·내부통제) 구축", owner: C, weeks: 4}
+  bcc:
+    - {step: "BCC 상대방 선정·실사", owner: C, weeks: 4}
+    - {step: "BCC 계약 구조·세무 처리 검토 — 세무 전문가", owner: B, weeks: 4}
+    - {step: "IRC 신청·수령", owner: B, weeks: 4}
+
+defense_extra:
+  - {step: "전략물자 사전판정(Yestrade) 및 방위사업청 수출허가 사전 상담", owner: B, weeks: 4}
+  - {step: "주베트남 대사관 국방무관부·KOTRA 협의", owner: C, weeks: 2}
+  - {step: "최종사용자증명(EUC) 확보 절차 확인", owner: B, weeks: 3}
