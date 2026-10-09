@@ -67,6 +67,12 @@ examples/               가상 고객사 예시 2종 (방산 광학, K-뷰티)
 - **교차검증의 수치 상충 탐지**는 휴리스틱(대표 수치 25% 이상 차이)입니다. LLM이 제시한 URL은 실재하지 않을 수 있으므로
   '교차확인' 항목도 담당자가 URL을 열람해 `열람확인` 칸을 채운 뒤 보고서에 반영하십시오.
 
+## 웹 버전과 동기화
+웹 버전(강동조 이력서 사이트 `vietnam-entry/`)은 같은 지식베이스를 JSON으로 사용합니다. `kb/*.yaml`을 수정했다면 다음을 실행해 웹 버전에 반영하십시오.
+```bash
+python -m vnkit export-kb <dongjo_kang_resume 경로>/vietnam-entry/kb.json
+```
+
 ## 테스트
 ```bash
 python tests/test_pipeline.py

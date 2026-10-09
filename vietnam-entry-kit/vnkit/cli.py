@@ -126,6 +126,18 @@ def cmd_all(args) -> int:
     return 0
 
 
+def cmd_export_kb(args) -> int:
+    """웹 앱용으로 kb/*.yaml 전체를 하나의 JSON으로 내보낸다."""
+    from . import kb
+
+    names = ["entity_types", "sector_profiles", "common_rules", "research_modules", "setup_steps", "team"]
+    payload = {n: kb.load(n) for n in names}
+    dest = Path(args.dest)
+    _write(dest, json.dumps(payload, ensure_ascii=False, indent=1))
+    print(f"지식베이스 내보내기: {dest}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="vnkit", description="베트남 진출 자동화 키트")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -161,6 +173,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--effort", default="high")
     p.add_argument("--docx", action="store_true")
     p.set_defaults(fn=cmd_all)
+
+    p = sub.add_parser("export-kb", help="웹 앱용 지식베이스 JSON 내보내기")
+    p.add_argument("dest")
+    p.set_defaults(fn=cmd_export_kb)
 
     args = ap.parse_args(argv)
     return args.fn(args)
