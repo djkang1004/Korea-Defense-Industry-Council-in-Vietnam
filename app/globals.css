@@ -48,8 +48,21 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: Pretendard, "Noto Sans KR", "Malgun Gothic", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.hero-grid {
+  background-color: #f8fafc;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 :root {
